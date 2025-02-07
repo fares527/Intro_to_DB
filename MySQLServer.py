@@ -23,6 +23,18 @@ def create_database(host, user, password, database):
    
    cursor.close()
    mydb.close()
+
+if __name__ == "__main__":
+    # Replace with your actual MySQL server credentials
+    host = "localhost"
+    user = "your_username"
+    password = "your_password"
+    database = "alx_book_store"
+
+    if create_database(host, user, password, database):
+        print("Database creation successful.")
+    else:
+        print("Database creation failed.")
        
     
 
