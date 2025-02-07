@@ -23,7 +23,7 @@ def create_database(host, user, password, database_name):
         cursor = conn.cursor()
 
         # Attempt to create the database
-        cursor.execute(f"CREATE DATABASE IF NOT EXISTS {database_name}") 
+        cursor.execute(f"CREATE DATABASE IF NOT EXISTS alx_book_store") 
 
         # Commit the changes
         conn.commit()
